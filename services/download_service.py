@@ -7,9 +7,9 @@ from pathlib import Path
 from typing import Dict, Any, Optional, Callable
 import tempfile
 
-# استفاده از pytube برای دانلود یوتیوب
-from pytube import YouTube, Stream
-from pytube.exceptions import PytubeError
+# استفاده از pytubefix برای دانلود یوتیوب
+from pytubefix import YouTube, Stream
+from pytubefix.exceptions import VideoUnavailable, ExtractError, RegexMatchError
 
 from config import DOWNLOAD_CONFIG, QUALITY_OPTIONS
 from services.session_manager import SessionManager
@@ -189,7 +189,7 @@ class PytubeDownloader:
                 'height': info.get('height', 0)
             }
         
-        except PytubeError as e:
+        except Exception as e:
             logger.error(f"Pytube download error: {e}")
             return {'success': False, 'error': f'Download failed: {str(e)}'}
         
@@ -354,7 +354,7 @@ class DownloadService:
                 'height': int(stream.resolution.split('x')[1]) if stream.resolution else 0
             }
                 
-        except PytubeError as e:
+        except Exception as e:
             logger.error(f"Pytube error: {e}")
             return {'success': False, 'error': f'Pytube error: {str(e)}'}
         except Exception as e:
@@ -463,7 +463,7 @@ class DownloadService:
                     'filesize': yt.streams.get_highest_resolution().filesize if yt.streams.get_highest_resolution() else 0
                 }
                 
-            except PytubeError as e:
+            except Exception as e:
                 logger.error(f"Pytube error: {e}")
                 return {'success': False, 'error': f"Pytube error: {str(e)}"}
             except Exception as e:
@@ -497,7 +497,7 @@ class DownloadService:
                     'platform': platform,
                     'filesize': stream.filesize if stream else 0
                 }
-            except PytubeError as e:
+            except Exception as e:
                 logger.error(f"Pytube info extraction error: {e}")
                 return {'success': False, 'error': f'Pytube error: {str(e)}'}
                 

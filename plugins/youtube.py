@@ -1,7 +1,7 @@
 import os
 import asyncio
-from pytube import YouTube
-from pytube.exceptions import PytubeError
+from pytubefix import YouTube
+from pytubefix.exceptions import VideoUnavailable, ExtractError, RegexMatchError
 from telethon import events, Button
 from telethon.tl.types import DocumentAttributeVideo, DocumentAttributeAudio
 from utils.progress_manager import ProgressManager, TelethonProgressHook
@@ -72,7 +72,7 @@ class YouTubeDownloader:
                 'formats': formats
             }
                 
-        except PytubeError as e:
+        except Exception as e:
             raise Exception(f"خطا در pytube: {str(e)}")
         except Exception as e:
             raise Exception(f"خطا در دریافت اطلاعات: {str(e)}")
@@ -188,7 +188,7 @@ class YouTubeDownloader:
                 
             return file_path
                 
-        except PytubeError as e:
+        except Exception as e:
             raise Exception(f"خطا در pytube: {str(e)}")
         except Exception as e:
             raise Exception(f"خطا در دانلود: {str(e)}")

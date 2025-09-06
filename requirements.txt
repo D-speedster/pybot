@@ -4,7 +4,7 @@ pyrogram==2.0.106
 
 # Download libraries
 instaloader==4.10.3
-pytube>=15.0.0
+pytubefix>=9.5.0
 
 # HTTP and networking
 requests==2.31.0

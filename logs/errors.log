@@ -1752,3 +1752,13 @@ None
 None
 2025-09-06 10:06:28 | ERROR    | handlers.bot_handlers | process_message_queue | 145 | ❌ Error processing queued message 1: 'User' object has no attribute 'last_name'
 None
+2025-09-06 10:14:03 | ERROR    | services.download_service | get_download_info | 470 | Unexpected error during info extraction: HTTP Error 400: Bad Request
+None
+2025-09-06 10:14:05 | ERROR    | services.download_service | get_download_info | 470 | Unexpected error during info extraction: HTTP Error 400: Bad Request
+None
+2025-09-06 10:17:10 | ERROR    | services.download_service | get_download_info | 470 | Unexpected error during info extraction: HTTP Error 400: Bad Request
+None
+2025-09-06 10:17:14 | ERROR    | services.download_service | get_download_info | 470 | Unexpected error during info extraction: HTTP Error 400: Bad Request
+None
+2025-09-06 10:17:49 | ERROR    | __main__             | main            | 51 | ❌ Fatal error: database is locked
+None
