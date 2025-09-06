@@ -22,8 +22,8 @@ class YouTubeDownloader:
     async def get_video_info(self, url: str) -> dict:
         """دریافت اطلاعات ویدیو با pytube"""
         try:
-            # ایجاد شیء YouTube
-            yt = YouTube(url)
+            # ایجاد شیء YouTube با PoToken و کلاینت WEB
+            yt = YouTube(url, use_po_token=True, client='WEB')
             
             # استخراج فرمت‌های موجود
             formats = []
@@ -143,8 +143,8 @@ class YouTubeDownloader:
         """دانلود ویدیو یا صوت با pytube"""
         
         try:
-            # ایجاد شیء YouTube
-            yt = YouTube(url)
+            # ایجاد شیء YouTube با PoToken و کلاینت WEB
+            yt = YouTube(url, use_po_token=True, client='WEB')
             
             # انتخاب stream بر اساس نوع دانلود
             if audio_only:

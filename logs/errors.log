@@ -1762,3 +1762,11 @@ None
 None
 2025-09-06 10:17:49 | ERROR    | __main__             | main            | 51 | ❌ Fatal error: database is locked
 None
+2025-09-06 10:18:16 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+None
+2025-09-06 10:18:17 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+None
+2025-09-06 10:20:25 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+None
+2025-09-06 10:20:25 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+None

@@ -2220,3 +2220,38 @@ RuntimeError: Should not be applying the difference when neither account or secr
 2025-09-06 10:18:08 | INFO     | __main__             | main            | ✅ Admin panel initialized
 2025-09-06 10:18:08 | INFO     | __main__             | main            | ✅ Bot started successfully!
 2025-09-06 10:18:08 | INFO     | __main__             | main            | 📊 Active sessions: 1
+2025-09-06 10:18:15 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=LSH2W6Aw-7A
+2025-09-06 10:18:16 | ERROR    | services.download_service | get_download_info | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+2025-09-06 10:18:16 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=LSH2W6Aw-7A
+2025-09-06 10:18:17 | ERROR    | services.download_service | get_download_info | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+2025-09-06 10:20:07 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:20:07 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:20:07 | INFO     | __main__             | main            | 🚀 Starting Telegram Bot with Userbot support...
+2025-09-06 10:20:07 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:20:07 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:20:07 | INFO     | services.session_manager | initialize      | 🔄 Initializing Session Manager...
+2025-09-06 10:20:10 | INFO     | services.session_manager | load_session    | ✅ Session amirspeedster1380 loaded successfully (@amir9900x)
+2025-09-06 10:20:10 | INFO     | services.session_manager | initialize      | ✅ Session Manager initialized with 1 sessions
+2025-09-06 10:20:10 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:20:13 | INFO     | handlers.bot_handlers | setup_bot       | ✅ Bot client started successfully
+2025-09-06 10:20:13 | INFO     | __main__             | main            | ✅ Admin panel initialized
+2025-09-06 10:20:13 | INFO     | __main__             | main            | ✅ Bot started successfully!
+2025-09-06 10:20:13 | INFO     | __main__             | main            | 📊 Active sessions: 1
+2025-09-06 10:20:22 | INFO     | handlers.bot_handlers | start_handler   | User 79049016 (🔰Amir🔰) started the bot
+2025-09-06 10:20:23 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=LSH2W6Aw-7A
+2025-09-06 10:20:25 | ERROR    | services.download_service | get_download_info | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+2025-09-06 10:20:25 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=LSH2W6Aw-7A
+2025-09-06 10:20:25 | ERROR    | services.download_service | get_download_info | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+2025-09-06 10:21:38 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:21:38 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:21:38 | INFO     | __main__             | main            | 🚀 Starting Telegram Bot with Userbot support...
+2025-09-06 10:21:38 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:21:38 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:21:38 | INFO     | services.session_manager | initialize      | 🔄 Initializing Session Manager...
+2025-09-06 10:21:39 | INFO     | services.session_manager | load_session    | ✅ Session amirspeedster1380 loaded successfully (@amir9900x)
+2025-09-06 10:21:39 | INFO     | services.session_manager | initialize      | ✅ Session Manager initialized with 1 sessions
+2025-09-06 10:21:39 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:21:41 | INFO     | handlers.bot_handlers | setup_bot       | ✅ Bot client started successfully
+2025-09-06 10:21:41 | INFO     | __main__             | main            | ✅ Admin panel initialized
+2025-09-06 10:21:41 | INFO     | __main__             | main            | ✅ Bot started successfully!
+2025-09-06 10:21:41 | INFO     | __main__             | main            | 📊 Active sessions: 1
