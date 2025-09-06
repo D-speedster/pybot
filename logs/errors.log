@@ -1809,3 +1809,15 @@ None
 None
 2025-09-06 10:32:14 | ERROR    | __main__             | main            | 51 | ❌ Fatal error: database is locked
 None
+2025-09-06 10:38:47 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+None
+2025-09-06 10:38:52 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+None
+2025-09-06 10:39:42 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: _oOZG5-tqpA This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+None
+2025-09-06 10:39:47 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: _oOZG5-tqpA This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+None
+2025-09-06 10:41:14 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: _oOZG5-tqpA This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+None
+2025-09-06 10:41:19 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: _oOZG5-tqpA This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+None

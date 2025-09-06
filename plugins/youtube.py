@@ -23,7 +23,7 @@ class YouTubeDownloader:
         """دریافت اطلاعات ویدیو با pytube"""
         try:
             # ایجاد شیء YouTube با کلاینت WEB
-            yt = YouTube(url, client='WEB')
+            yt = YouTube(url, client='ANDROID')
             
             # استخراج فرمت‌های موجود
             formats = []
@@ -144,7 +144,7 @@ class YouTubeDownloader:
         
         try:
             # ایجاد شیء YouTube با کلاینت WEB
-            yt = YouTube(url, client='WEB')
+            yt = YouTube(url, client='ANDROID')
             
             # انتخاب stream بر اساس نوع دانلود
             if audio_only:

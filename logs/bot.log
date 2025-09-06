@@ -2335,3 +2335,55 @@ sqlite3.OperationalError: database is locked
 2025-09-06 10:38:30 | INFO     | __main__             | main            | ✅ Admin panel initialized
 2025-09-06 10:38:30 | INFO     | __main__             | main            | ✅ Bot started successfully!
 2025-09-06 10:38:30 | INFO     | __main__             | main            | 📊 Active sessions: 0
+2025-09-06 10:38:36 | INFO     | handlers.bot_handlers | start_handler   | User 79049016 (🔰Amir🔰) started the bot
+2025-09-06 10:38:37 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=LSH2W6Aw-7A
+2025-09-06 10:38:47 | ERROR    | services.download_service | get_download_info | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+2025-09-06 10:38:47 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=LSH2W6Aw-7A
+2025-09-06 10:38:52 | ERROR    | services.download_service | get_download_info | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+2025-09-06 10:39:10 | INFO     | handlers.bot_handlers | start_handler   | User 79049016 (🔰Amir🔰) started the bot
+2025-09-06 10:39:22 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:39:22 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:39:22 | INFO     | __main__             | main            | 🚀 Starting Telegram Bot with Userbot support...
+2025-09-06 10:39:22 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:39:22 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:39:22 | INFO     | services.session_manager | initialize      | 🔄 Initializing Session Manager...
+2025-09-06 10:39:22 | INFO     | services.session_manager | initialize      | ✅ Session Manager initialized with 0 sessions
+2025-09-06 10:39:22 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:39:23 | INFO     | handlers.bot_handlers | setup_bot       | ✅ Bot client started successfully
+2025-09-06 10:39:23 | INFO     | __main__             | main            | ✅ Admin panel initialized
+2025-09-06 10:39:23 | INFO     | __main__             | main            | ✅ Bot started successfully!
+2025-09-06 10:39:23 | INFO     | __main__             | main            | 📊 Active sessions: 0
+2025-09-06 10:39:29 | INFO     | handlers.bot_handlers | start_handler   | User 79049016 (🔰Amir🔰) started the bot
+2025-09-06 10:39:35 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=_oOZG5-tqpA
+2025-09-06 10:39:42 | ERROR    | services.download_service | get_download_info | Pytube error: _oOZG5-tqpA This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+2025-09-06 10:39:42 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=_oOZG5-tqpA
+2025-09-06 10:39:47 | ERROR    | services.download_service | get_download_info | Pytube error: _oOZG5-tqpA This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+2025-09-06 10:40:37 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:40:37 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:40:37 | INFO     | __main__             | main            | 🚀 Starting Telegram Bot with Userbot support...
+2025-09-06 10:40:37 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:40:37 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:40:37 | INFO     | services.session_manager | initialize      | 🔄 Initializing Session Manager...
+2025-09-06 10:40:37 | INFO     | services.session_manager | initialize      | ✅ Session Manager initialized with 0 sessions
+2025-09-06 10:40:37 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:40:39 | INFO     | handlers.bot_handlers | setup_bot       | ✅ Bot client started successfully
+2025-09-06 10:40:39 | INFO     | __main__             | main            | ✅ Admin panel initialized
+2025-09-06 10:40:39 | INFO     | __main__             | main            | ✅ Bot started successfully!
+2025-09-06 10:40:39 | INFO     | __main__             | main            | 📊 Active sessions: 0
+2025-09-06 10:41:05 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=_oOZG5-tqpA
+2025-09-06 10:41:14 | ERROR    | services.download_service | get_download_info | Pytube error: _oOZG5-tqpA This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+2025-09-06 10:41:14 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=_oOZG5-tqpA
+2025-09-06 10:41:19 | ERROR    | services.download_service | get_download_info | Pytube error: _oOZG5-tqpA This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
+2025-09-06 10:41:21 | INFO     | __main__             | main            | 🛑 Bot shutting down...
+2025-09-06 10:41:29 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:41:29 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:41:29 | INFO     | __main__             | main            | 🚀 Starting Telegram Bot with Userbot support...
+2025-09-06 10:41:29 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:41:29 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:41:29 | INFO     | services.session_manager | initialize      | 🔄 Initializing Session Manager...
+2025-09-06 10:41:29 | INFO     | services.session_manager | initialize      | ✅ Session Manager initialized with 0 sessions
+2025-09-06 10:41:29 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:41:31 | INFO     | handlers.bot_handlers | setup_bot       | ✅ Bot client started successfully
+2025-09-06 10:41:31 | INFO     | __main__             | main            | ✅ Admin panel initialized
+2025-09-06 10:41:31 | INFO     | __main__             | main            | ✅ Bot started successfully!
+2025-09-06 10:41:31 | INFO     | __main__             | main            | 📊 Active sessions: 0
