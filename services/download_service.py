@@ -148,7 +148,7 @@ class PytubeDownloader:
             progress_handler = PytubeProgressCallback(progress_callback)
             
             # Initialize YouTube object
-            yt = YouTube(url, on_progress_callback=progress_handler, use_po_token=True, client='WEB')
+            yt = YouTube(url, on_progress_callback=progress_handler, client='WEB')
             
             # Get stream based on quality
             stream = self._get_stream_by_quality(yt, quality)
@@ -321,7 +321,7 @@ class DownloadService:
             progress_handler = PytubeProgressCallback(progress_hook.callback if hasattr(progress_hook, 'callback') else None)
             
             # Initialize YouTube object
-            yt = YouTube(url, on_progress_callback=progress_handler, use_po_token=True, client='WEB')
+            yt = YouTube(url, on_progress_callback=progress_handler, client='WEB')
             
             # Get stream based on quality
             stream = self._get_stream_by_quality(yt, quality)
@@ -432,7 +432,7 @@ class DownloadService:
             
             try:
                 # Initialize YouTube object
-                yt = YouTube(url, use_po_token=True, client='WEB')
+                yt = YouTube(url, client='WEB')
                 
                 # Get available streams
                 streams = yt.streams.all()
@@ -485,7 +485,7 @@ class DownloadService:
             
             # Use pytube for YouTube
             try:
-                yt = YouTube(url, use_po_token=True, client='WEB')
+                yt = YouTube(url, client='WEB')
                 stream = yt.streams.get_highest_resolution()
                 
                 return {

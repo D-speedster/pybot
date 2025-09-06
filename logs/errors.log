@@ -1770,3 +1770,42 @@ None
 None
 2025-09-06 10:20:25 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: LSH2W6Aw-7A This request was detected as a bot. Use `use_po_token=True` or switch to WEB client to view. See more details at https://github.com/JuanBindez/pytubefix/pull/209
 None
+2025-09-06 10:23:39 | ERROR    | services.download_service | get_download_info | 467 | Pytube error: 
+None
+2025-09-06 10:23:48 | ERROR    | telethon.client.telegrambaseclient | _cancel         | 199 | Unhandled exception from keepalive_handle after cancelling <class '_asyncio.Task'> (<Task finished name='Task-15' coro=<UpdateMethods._keepalive_loop() done, defined at C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py:481> exception=OperationalError('database is locked')>)
+(<class 'sqlite3.OperationalError'>, OperationalError('database is locked'), <traceback object at 0x00000275D8199F00>)
+Traceback (most recent call last):
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\helpers.py", line 176, in _cancel
+    await task
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py", line 517, in _keepalive_loop
+    self._save_states_and_entities()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\telegrambaseclient.py", line 692, in _save_states_and_entities
+    self.session.process_entities(types.contacts.ResolvedPeer(None, [e._as_input_peer() for e in entities], []))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\sessions\sqlite.py", line 301, in process_entities
+    c.executemany(
+    ~~~~~~~~~~~~~^
+        'insert or replace into entities values (?,?,?,?,?,?)', rows)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+2025-09-06 10:23:48 | ERROR    | asyncio              | default_exception_handler | 1865 | Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<UpdateMethods._keepalive_loop() done, defined at C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py:481> exception=OperationalError('database is locked')>
+(<class 'sqlite3.OperationalError'>, OperationalError('database is locked'), <traceback object at 0x00000275D9A3E200>)
+Traceback (most recent call last):
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py", line 517, in _keepalive_loop
+    self._save_states_and_entities()
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\telegrambaseclient.py", line 692, in _save_states_and_entities
+    self.session.process_entities(types.contacts.ResolvedPeer(None, [e._as_input_peer() for e in entities], []))
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\sessions\sqlite.py", line 301, in process_entities
+    c.executemany(
+        'insert or replace into entities values (?,?,?,?,?,?)', rows)
+sqlite3.OperationalError: database is locked
+2025-09-06 10:25:43 | ERROR    | services.session_manager | load_session    | 117 | ❌ Error loading session amirspeedster1380: database is locked
+None
+2025-09-06 10:25:48 | ERROR    | __main__             | main            | 51 | ❌ Fatal error: database is locked
+None
+2025-09-06 10:32:08 | ERROR    | services.session_manager | load_session    | 117 | ❌ Error loading session amirspeedster1380: database is locked
+None
+2025-09-06 10:32:14 | ERROR    | __main__             | main            | 51 | ❌ Fatal error: database is locked
+None

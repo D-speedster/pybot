@@ -2255,3 +2255,83 @@ RuntimeError: Should not be applying the difference when neither account or secr
 2025-09-06 10:21:41 | INFO     | __main__             | main            | ✅ Admin panel initialized
 2025-09-06 10:21:41 | INFO     | __main__             | main            | ✅ Bot started successfully!
 2025-09-06 10:21:41 | INFO     | __main__             | main            | 📊 Active sessions: 1
+2025-09-06 10:23:10 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=LSH2W6Aw-7A
+2025-09-06 10:23:39 | ERROR    | services.download_service | get_download_info | Pytube error: 
+2025-09-06 10:23:39 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=LSH2W6Aw-7A
+2025-09-06 10:23:48 | ERROR    | telethon.client.telegrambaseclient | _cancel         | Unhandled exception from keepalive_handle after cancelling <class '_asyncio.Task'> (<Task finished name='Task-15' coro=<UpdateMethods._keepalive_loop() done, defined at C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py:481> exception=OperationalError('database is locked')>)
+Traceback (most recent call last):
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\helpers.py", line 176, in _cancel
+    await task
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py", line 517, in _keepalive_loop
+    self._save_states_and_entities()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\telegrambaseclient.py", line 692, in _save_states_and_entities
+    self.session.process_entities(types.contacts.ResolvedPeer(None, [e._as_input_peer() for e in entities], []))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\sessions\sqlite.py", line 301, in process_entities
+    c.executemany(
+    ~~~~~~~~~~~~~^
+        'insert or replace into entities values (?,?,?,?,?,?)', rows)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+2025-09-06 10:23:48 | INFO     | __main__             | main            | 🛑 Bot shutting down...
+2025-09-06 10:23:48 | ERROR    | asyncio              | default_exception_handler | Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<UpdateMethods._keepalive_loop() done, defined at C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py:481> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py", line 517, in _keepalive_loop
+    self._save_states_and_entities()
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\telegrambaseclient.py", line 692, in _save_states_and_entities
+    self.session.process_entities(types.contacts.ResolvedPeer(None, [e._as_input_peer() for e in entities], []))
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\sessions\sqlite.py", line 301, in process_entities
+    c.executemany(
+        'insert or replace into entities values (?,?,?,?,?,?)', rows)
+sqlite3.OperationalError: database is locked
+2025-09-06 10:23:51 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:23:51 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:23:51 | INFO     | __main__             | main            | 🚀 Starting Telegram Bot with Userbot support...
+2025-09-06 10:23:51 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:23:51 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:23:51 | INFO     | services.session_manager | initialize      | 🔄 Initializing Session Manager...
+2025-09-06 10:23:53 | INFO     | services.session_manager | load_session    | ✅ Session amirspeedster1380 loaded successfully (@amir9900x)
+2025-09-06 10:23:53 | INFO     | services.session_manager | initialize      | ✅ Session Manager initialized with 1 sessions
+2025-09-06 10:23:53 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:23:55 | INFO     | handlers.bot_handlers | setup_bot       | ✅ Bot client started successfully
+2025-09-06 10:23:55 | INFO     | __main__             | main            | ✅ Admin panel initialized
+2025-09-06 10:23:55 | INFO     | __main__             | main            | ✅ Bot started successfully!
+2025-09-06 10:23:55 | INFO     | __main__             | main            | 📊 Active sessions: 1
+2025-09-06 10:24:05 | INFO     | handlers.bot_handlers | start_handler   | User 79049016 (🔰Amir🔰) started the bot
+2025-09-06 10:24:07 | INFO     | services.download_service | get_download_info | Using pytube to extract info for URL: https://www.youtube.com/watch?v=LSH2W6Aw-7A
+2025-09-06 10:25:37 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:25:37 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:25:37 | INFO     | __main__             | main            | 🚀 Starting Telegram Bot with Userbot support...
+2025-09-06 10:25:37 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:25:37 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:25:37 | INFO     | services.session_manager | initialize      | 🔄 Initializing Session Manager...
+2025-09-06 10:25:43 | ERROR    | services.session_manager | load_session    | ❌ Error loading session amirspeedster1380: database is locked
+2025-09-06 10:25:43 | INFO     | services.session_manager | initialize      | ✅ Session Manager initialized with 0 sessions
+2025-09-06 10:25:43 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:25:48 | ERROR    | __main__             | main            | ❌ Fatal error: database is locked
+2025-09-06 10:25:48 | INFO     | __main__             | main            | 🛑 Bot shutting down...
+2025-09-06 10:32:03 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:32:03 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:32:03 | INFO     | __main__             | main            | 🚀 Starting Telegram Bot with Userbot support...
+2025-09-06 10:32:03 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:32:03 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:32:03 | INFO     | services.session_manager | initialize      | 🔄 Initializing Session Manager...
+2025-09-06 10:32:08 | ERROR    | services.session_manager | load_session    | ❌ Error loading session amirspeedster1380: database is locked
+2025-09-06 10:32:08 | INFO     | services.session_manager | initialize      | ✅ Session Manager initialized with 0 sessions
+2025-09-06 10:32:08 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:32:14 | ERROR    | __main__             | main            | ❌ Fatal error: database is locked
+2025-09-06 10:32:14 | INFO     | __main__             | main            | 🛑 Bot shutting down...
+2025-09-06 10:38:21 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:38:21 | INFO     | root                 | _setup_logging  | ✅ Logging system initialized
+2025-09-06 10:38:21 | INFO     | __main__             | main            | 🚀 Starting Telegram Bot with Userbot support...
+2025-09-06 10:38:22 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:38:22 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:38:22 | INFO     | services.session_manager | initialize      | 🔄 Initializing Session Manager...
+2025-09-06 10:38:22 | INFO     | services.session_manager | initialize      | ✅ Session Manager initialized with 0 sessions
+2025-09-06 10:38:22 | INFO     | utils.database       | _init_db        | ✅ Database initialized successfully
+2025-09-06 10:38:30 | INFO     | handlers.bot_handlers | setup_bot       | ✅ Bot client started successfully
+2025-09-06 10:38:30 | INFO     | __main__             | main            | ✅ Admin panel initialized
+2025-09-06 10:38:30 | INFO     | __main__             | main            | ✅ Bot started successfully!
+2025-09-06 10:38:30 | INFO     | __main__             | main            | 📊 Active sessions: 0
