@@ -1,0 +1,1752 @@
+2025-09-05 13:14:00 | ERROR    | __main__             | main            | 46 | ❌ Fatal error: Connection to Telegram failed 5 time(s)
+None
+2025-09-05 13:14:48 | ERROR    | __main__             | main            | 46 | ❌ Fatal error: Connection to Telegram failed 5 time(s)
+None
+2025-09-05 13:53:56 | ERROR    | __main__             | main            | 46 | ❌ Fatal error: Connection to Telegram failed 5 time(s)
+None
+2025-09-05 13:58:49 | ERROR    | __main__             | main            | 46 | ❌ Fatal error: Connection to Telegram failed 5 time(s)
+None
+2025-09-05 14:32:47 | ERROR    | telethon.client.updates | _dispatch_update | 586 | Unhandled exception on url_handler
+(<class 'AttributeError'>, AttributeError("'RateLimiter' object has no attribute 'check_rate_limit'"), <traceback object at 0x0000018A974A8A00>)
+Traceback (most recent call last):
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "D:\laptop\React-Project\Srv-youtube\amir\handlers\bot_handlers.py", line 177, in url_handler
+    if not await self.rate_limiter.check_rate_limit(user.id):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'RateLimiter' object has no attribute 'check_rate_limit'
+2025-09-05 14:33:29 | ERROR    | telethon.client.updates | _dispatch_update | 586 | Unhandled exception on url_handler
+(<class 'AttributeError'>, AttributeError("'RateLimiter' object has no attribute 'check_rate_limit'"), <traceback object at 0x0000018A97CC9D00>)
+Traceback (most recent call last):
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "D:\laptop\React-Project\Srv-youtube\amir\handlers\bot_handlers.py", line 177, in url_handler
+    if not await self.rate_limiter.check_rate_limit(user.id):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'RateLimiter' object has no attribute 'check_rate_limit'
+2025-09-05 14:43:55 | ERROR    | services.download_service | _download_media | 199 | Download error: no running event loop
+None
+2025-09-05 14:44:19 | ERROR    | services.download_service | _download_media | 199 | Download error: no running event loop
+None
+2025-09-05 14:45:34 | ERROR    | services.download_service | _download_media | 211 | Download error: '>' not supported between instances of 'NoneType' and 'int'
+None
+2025-09-05 14:47:43 | ERROR    | telethon.network.mtprotosender | send            | 187 | Request caused struct.error: required argument is not a float: SendMediaRequest(peer=InputPeerUser(user_id=79049016, access_hash=4370361523096984133), media=InputMediaUploadedDocument(file=InputFile(id=938050957077325196, parts=69, name='Michael Jackson - Smooth Criminal (Official Video).webm', md5_checksum='96600e49f62a2b83b8b90b6b9e68e33e'), mime_type='video/webm', attributes=[DocumentAttributeFilename(file_name='Michael Jackson - Smooth Criminal (Official Video).webm'), DocumentAttributeVideo(duration=None, w=None, h=None, round_message=None, supports_streaming=True, nosound=None, preload_prefix_size=None)], nosound_video=None, force_file=False, spoiler=None, thumb=None, stickers=[], ttl_seconds=None), message='✅ Michael Jackson - Smooth Criminal (Official Video)\n\n📊 اندازه: 8.6 MB\n🎬 پلتفرم: Youtube\n🚀 دانلود شده توسط ربات پیشرفته', silent=None, background=None, clear_draft=False, noforwards=None, update_stickersets_order=None, invert_media=None, reply_to=None, random_id=277589470693425377, reply_markup=None, entities=[MessageEntityBold(offset=2, length=50)], schedule_date=None, send_as=None, quick_reply_shortcut=None, effect=None)
+None
+2025-09-05 14:47:43 | ERROR    | handlers.bot_handlers | handle_download_callback | 362 | Download error for user 79049016: required argument is not a float
+None
+2025-09-05 14:56:36 | ERROR    | handlers.bot_handlers | handle_download_callback | 387 | Download error for user 528815211: Could not find the input entity for PeerUser(user_id=528815211) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+None
+2025-09-05 15:04:17 | ERROR    | services.download_service | _download_media | 207 | yt-dlp download error: [0;31mERROR:[0m [Instagram] DN-ndHsAM62: Requested format is not available. Use --list-formats for a list of available formats
+None
+2025-09-05 15:04:21 | ERROR    | services.download_service | _download_media | 211 | Download error: '>' not supported between instances of 'NoneType' and 'int'
+None
+2025-09-05 15:07:56 | ERROR    | handlers.bot_handlers | handle_download_callback | 414 | Download error for user 528815211: Could not find the input entity for PeerUser(user_id=528815211) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+None
+2025-09-05 15:11:19 | ERROR    | handlers.bot_handlers | handle_download_callback | 401 | File send error: Could not find the input entity for PeerUser(user_id=528815211) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+None
+2025-09-05 15:11:48 | ERROR    | handlers.bot_handlers | handle_download_callback | 401 | File send error: Could not find the input entity for PeerUser(user_id=7596441287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+None
+2025-09-05 15:11:50 | ERROR    | handlers.bot_handlers | handle_download_callback | 401 | File send error: Could not find the input entity for PeerUser(user_id=528815211) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+None
+2025-09-05 15:11:52 | ERROR    | handlers.bot_handlers | handle_download_callback | 401 | File send error: Could not find the input entity for PeerUser(user_id=7596441287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+None
+2025-09-05 15:14:25 | ERROR    | services.download_service | _download_media | 207 | yt-dlp download error: [0;31mERROR:[0m [Instagram] DN-ndHsAM62: Requested format is not available. Use --list-formats for a list of available formats
+None
+2025-09-05 15:28:44 | ERROR    | __main__             | main            | 56 | ❌ Fatal error: 'Database' object has no attribute 'initialize'
+None
+2025-09-05 15:36:23 | ERROR    | handlers.admin_handlers | _get_all_users  | 281 | Error getting all users: The API access for bot users is restricted. The method you tried to invoke cannot be executed as a bot (caused by GetDialogsRequest)
+None
+2025-09-05 15:36:44 | ERROR    | handlers.admin_handlers | _get_bot_stats  | 257 | Error getting bot stats: The API access for bot users is restricted. The method you tried to invoke cannot be executed as a bot (caused by GetDialogsRequest)
+None
+2025-09-05 15:48:58 | ERROR    | services.download_service | _download_media | 207 | yt-dlp download error: [0;31mERROR:[0m [youtube] _84P5QO9Srk: Requested format is not available. Use --list-formats for a list of available formats
+None
+2025-09-05 15:49:38 | ERROR    | utils.network        | get_public_ip   | 179 | ❌ Failed to get public IP: 
+None
+2025-09-05 15:58:08 | ERROR    | utils.network        | get_public_ip   | 179 | ❌ Failed to get public IP: 
+None
+2025-09-05 15:58:31 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 449 | Error recovering old users: The API access for bot users is restricted. The method you tried to invoke cannot be executed as a bot (caused by GetDialogsRequest)
+None
+2025-09-05 16:02:37 | ERROR    | services.download_service | _download_media | 207 | yt-dlp download error: [0;31mERROR:[0m [youtube] yjz54oz6P8Q: Requested format is not available. Use --list-formats for a list of available formats
+None
+2025-09-05 16:02:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 460 | Error recovering old users: 'SessionManager' object has no attribute 'get_available_session'
+None
+2025-09-05 16:06:48 | ERROR    | utils.network        | test_internet_connection | 30 | ❌ Internet connection test failed: 
+None
+2025-09-05 16:06:54 | ERROR    | __main__             | main            | 31 | ❌ Network connection test failed
+None
+2025-09-05 16:07:40 | ERROR    | handlers.bot_handlers | get_available_qualities | 283 | Error getting available qualities: '>=' not supported between instances of 'NoneType' and 'int'
+None
+2025-09-05 16:07:58 | ERROR    | services.download_service | _download_media | 207 | yt-dlp download error: [0;31mERROR:[0m [youtube] CjP3VlbIfDA: Requested format is not available. Use --list-formats for a list of available formats
+None
+2025-09-05 16:12:41 | ERROR    | utils.network        | test_download_speed | 205 | ❌ Speed test failed: 
+None
+2025-09-05 16:20:44 | ERROR    | utils.network        | test_internet_connection | 30 | ❌ Internet connection test failed: 
+None
+2025-09-05 16:20:55 | ERROR    | __main__             | main            | 31 | ❌ Network connection test failed
+None
+2025-09-05 16:21:21 | ERROR    | __main__             | main            | 31 | ❌ Network connection test failed
+None
+2025-09-05 16:39:31 | ERROR    | services.download_service | get_download_info | 378 | Timeout while extracting info for: https://www.youtube.com/watch?v=mLuPQfIZDSs&list=RDmLuPQfIZDSs&start_radio=1
+None
+2025-09-05 16:40:01 | ERROR    | services.download_service | get_download_info | 378 | Timeout while extracting info for: https://www.youtube.com/watch?v=mLuPQfIZDSs&list=RDmLuPQfIZDSs&start_radio=1
+None
+2025-09-05 16:40:16 | ERROR    | services.download_service | get_download_info | 378 | Timeout while extracting info for: https://www.youtube.com/watch?v=mLuPQfIZDSs&list=RDmLuPQfIZDSs&start_radio=1
+None
+2025-09-05 16:40:46 | ERROR    | services.download_service | get_download_info | 378 | Timeout while extracting info for: https://www.youtube.com/watch?v=mLuPQfIZDSs&list=RDmLuPQfIZDSs&start_radio=1
+None
+2025-09-05 16:44:47 | ERROR    | utils.network        | test_internet_connection | 30 | ❌ Internet connection test failed: 
+None
+2025-09-05 16:45:23 | ERROR    | utils.network        | test_internet_connection | 30 | ❌ Internet connection test failed: 
+None
+2025-09-05 16:45:32 | ERROR    | __main__             | main            | 31 | ❌ Network connection test failed
+None
+2025-09-05 16:47:21 | ERROR    | services.download_service | get_download_info | 378 | Timeout while extracting info for: https://www.youtube.com/watch?v=mLuPQfIZDSs&list=RDmLuPQfIZDSs&start_radio=1
+None
+2025-09-05 16:48:07 | ERROR    | services.download_service | get_download_info | 378 | Timeout while extracting info for: https://www.youtube.com/watch?v=mLuPQfIZDSs&list=RDmLuPQfIZDSs&start_radio=1
+None
+2025-09-05 16:49:40 | ERROR    | services.download_service | _download_media | 207 | yt-dlp download error: [0;31mERROR:[0m [youtube] OK_JCtrrv-c: Requested format is not available. Use --list-formats for a list of available formats
+None
+2025-09-05 17:00:20 | ERROR    | utils.network        | get_public_ip   | 179 | ❌ Failed to get public IP: 
+None
+2025-09-05 17:06:52 | ERROR    | services.download_service | _cleanup_temp_dir | 310 | ❌ Cleanup error for temp_downloads\download_1757079061.719217: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_downloads\\download_1757079061.719217\\جرات حقیقت #2 🤣 بهش گفتم موهاتو بزن ... w⧸ farhadxray.mp4'
+None
+2025-09-05 17:18:28 | ERROR    | services.download_service | _cleanup_temp_dir | 310 | ❌ Cleanup error for temp_downloads\download_1757079768.081356: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_downloads\\download_1757079768.081356\\The Last of Us - Relaxing Music Compilation.mp4'
+None
+2025-09-05 17:45:18 | ERROR    | utils.network        | get_public_ip   | 179 | ❌ Failed to get public IP: 
+None
+2025-09-05 17:46:42 | ERROR    | services.download_service | _download_media | 207 | yt-dlp download error: [0;31mERROR:[0m [youtube] SmM0653YvXU: Requested format is not available. Use --list-formats for a list of available formats
+None
+2025-09-05 17:46:54 | ERROR    | services.download_service | _download_media | 207 | yt-dlp download error: [0;31mERROR:[0m [youtube] SmM0653YvXU: Requested format is not available. Use --list-formats for a list of available formats
+None
+2025-09-05 17:54:31 | ERROR    | utils.network        | test_internet_connection | 30 | ❌ Internet connection test failed: 
+None
+2025-09-05 20:17:34 | ERROR    | utils.network        | test_internet_connection | 30 | ❌ Internet connection test failed: 
+None
+2025-09-05 20:17:35 | ERROR    | utils.network        | get_public_ip   | 179 | ❌ Failed to get public IP: Cannot connect to host httpbin.org:443 ssl:default [getaddrinfo failed]
+None
+2025-09-05 20:17:46 | ERROR    | utils.network        | test_download_speed | 205 | ❌ Speed test failed: Cannot connect to host httpbin.org:443 ssl:default [getaddrinfo failed]
+None
+2025-09-05 20:20:27 | ERROR    | services.download_service | get_download_info | 381 | Info extraction error: [0;31mERROR:[0m [youtube] 6xKjwDP7Xzs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:20:33 | ERROR    | services.download_service | get_download_info | 381 | Info extraction error: [0;31mERROR:[0m [youtube] 6xKjwDP7Xzs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:22:02 | ERROR    | services.download_service | get_download_info | 381 | Info extraction error: [0;31mERROR:[0m [youtube] 6xKjwDP7Xzs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:22:07 | ERROR    | services.download_service | get_download_info | 381 | Info extraction error: [0;31mERROR:[0m [youtube] 6xKjwDP7Xzs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:22:24 | ERROR    | __main__             | main            | 57 | ❌ Fatal error: database is locked
+None
+2025-09-05 20:24:07 | ERROR    | services.download_service | get_download_info | 398 | Info extraction error: [0;31mERROR:[0m [youtube] 6xKjwDP7Xzs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:24:12 | ERROR    | services.download_service | get_download_info | 398 | Info extraction error: [0;31mERROR:[0m [youtube] 6xKjwDP7Xzs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:24:37 | ERROR    | services.download_service | get_download_info | 398 | Info extraction error: [0;31mERROR:[0m [youtube] pmOmkJDfE6Y: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:24:40 | ERROR    | services.download_service | get_download_info | 398 | Info extraction error: [0;31mERROR:[0m [youtube] pmOmkJDfE6Y: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:26:38 | ERROR    | services.download_service | get_download_info | 413 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:26:43 | ERROR    | services.download_service | get_download_info | 413 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:28:32 | ERROR    | services.download_service | get_download_info | 419 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:28:35 | ERROR    | services.download_service | get_download_info | 419 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:32:01 | ERROR    | services.download_service | get_download_info | 434 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:32:06 | ERROR    | services.download_service | get_download_info | 434 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:32:36 | ERROR    | services.download_service | get_download_info | 434 | Info extraction error: [0;31mERROR:[0m [youtube] -wNyEUrxzFU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:32:43 | ERROR    | services.download_service | get_download_info | 434 | Info extraction error: [0;31mERROR:[0m [youtube] -wNyEUrxzFU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:36:47 | ERROR    | services.download_service | get_download_info | 436 | Info extraction error: [0;31mERROR:[0m [youtube] 5EBYqxupgFU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:36:57 | ERROR    | services.download_service | get_download_info | 436 | Info extraction error: [0;31mERROR:[0m [youtube] 5EBYqxupgFU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:39:45 | ERROR    | services.download_service | get_download_info | 436 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:39:54 | ERROR    | services.download_service | get_download_info | 436 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:49:48 | ERROR    | services.download_service | get_download_info | 443 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:49:53 | ERROR    | services.download_service | get_download_info | 443 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:50:33 | ERROR    | services.download_service | get_download_info | 443 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:50:37 | ERROR    | services.download_service | get_download_info | 443 | Info extraction error: [0;31mERROR:[0m [youtube] rd2abY5u8Ow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:53:43 | ERROR    | services.download_service | get_download_info | 443 | Info extraction error: [0;31mERROR:[0m [youtube] vi5VWglolAI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 20:54:22 | ERROR    | services.download_service | get_download_info | 443 | Info extraction error: [0;31mERROR:[0m [youtube] vi5VWglolAI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 21:14:07 | ERROR    | services.download_service | get_download_info | 477 | Info extraction error: [0;31mERROR:[0m [youtube] vi5VWglolAI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 21:14:29 | ERROR    | services.download_service | get_download_info | 477 | Info extraction error: [0;31mERROR:[0m [youtube] vi5VWglolAI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:51 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:52 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:53 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:56 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:57 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:58 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:15:59 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:00 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:01 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:02 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:03 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:04 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:16:05 | ERROR    | handlers.admin_handlers | recover_old_users_from_dialogs | 477 | Error processing dialog: 'Database' object has no attribute 'get_user'
+None
+2025-09-05 21:19:20 | ERROR    | handlers.admin_handlers | _get_youtube_accounts_count | 822 | Error getting YouTube accounts count: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:19:24 | ERROR    | handlers.admin_handlers | _get_youtube_accounts | 841 | Error getting YouTube accounts: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:19:27 | ERROR    | handlers.admin_handlers | _get_youtube_accounts_count | 822 | Error getting YouTube accounts count: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:19:29 | ERROR    | services.download_service | get_download_info | 477 | Info extraction error: [0;31mERROR:[0m [youtube] vi5VWglolAI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 21:19:48 | ERROR    | services.download_service | get_download_info | 477 | Info extraction error: [0;31mERROR:[0m [youtube] vi5VWglolAI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 21:19:59 | ERROR    | handlers.admin_handlers | _save_youtube_account | 866 | Error saving YouTube account mrspeed717@gmail.com: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:21:31 | ERROR    | handlers.admin_handlers | _get_youtube_accounts_count | 822 | Error getting YouTube accounts count: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:22:35 | ERROR    | handlers.admin_handlers | _get_youtube_accounts_count | 822 | Error getting YouTube accounts count: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:22:58 | ERROR    | handlers.admin_handlers | _get_youtube_accounts_count | 822 | Error getting YouTube accounts count: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:23:23 | ERROR    | handlers.admin_handlers | _save_youtube_account | 866 | Error saving YouTube account mrspeed717@gmail.com: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:39:43 | ERROR    | handlers.admin_handlers | _save_youtube_account | 887 | Error saving YouTube account user@gmail.com: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:40:18 | ERROR    | handlers.admin_handlers | _save_youtube_account | 887 | Error saving YouTube account mespeed717@gmail.com: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:40:37 | ERROR    | handlers.admin_handlers | _extract_cookies_from_browser | 952 | Failed to extract cookies from chrome: Traceback (most recent call last):
+  File "D:\laptop\React-Project\Srv-youtube\amir\extract_cookies.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "D:\laptop\React-Project\Srv-youtube\amir\extract_cookies.py", line 68, in main
+    print(f"\U0001f50d \u062f\u0631 \u062d\u0627\u0644 \u0627\u0633\u062a\u062e\u0631\u0627\u062c \u06a9\u0648\u06a9\u06cc\u200c\u0647\u0627\u06cc {args.domain} \u0627\u0632 \u0645\u0631\u0648\u0631\u06af\u0631 {args.browser}...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+None
+2025-09-05 21:41:28 | ERROR    | services.download_service | get_download_info | 474 | Timeout while extracting info for: https://www.youtube.com/watch?v=vi5VWglolAI&list=RDvi5VWglolAI&start_radio=1
+None
+2025-09-05 21:41:58 | ERROR    | services.download_service | get_download_info | 474 | Timeout while extracting info for: https://www.youtube.com/watch?v=vi5VWglolAI&list=RDvi5VWglolAI&start_radio=1
+None
+2025-09-05 21:43:13 | ERROR    | handlers.admin_handlers | _get_youtube_accounts | 862 | Error getting YouTube accounts: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:43:27 | ERROR    | handlers.admin_handlers | _save_youtube_account | 887 | Error saving YouTube account mrspeed717@gmail.com: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:43:37 | ERROR    | handlers.admin_handlers | _extract_cookies_from_browser | 952 | Failed to extract cookies from chrome: Traceback (most recent call last):
+  File "D:\laptop\React-Project\Srv-youtube\amir\extract_cookies.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "D:\laptop\React-Project\Srv-youtube\amir\extract_cookies.py", line 68, in main
+    print(f"\U0001f50d \u062f\u0631 \u062d\u0627\u0644 \u0627\u0633\u062a\u062e\u0631\u0627\u062c \u06a9\u0648\u06a9\u06cc\u200c\u0647\u0627\u06cc {args.domain} \u0627\u0632 \u0645\u0631\u0648\u0631\u06af\u0631 {args.browser}...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+None
+2025-09-05 21:43:45 | ERROR    | handlers.admin_handlers | _get_youtube_accounts | 862 | Error getting YouTube accounts: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:43:55 | ERROR    | handlers.admin_handlers | _get_youtube_accounts_count | 843 | Error getting YouTube accounts count: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:44:08 | ERROR    | handlers.admin_handlers | _get_youtube_accounts_count | 843 | Error getting YouTube accounts count: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:44:11 | ERROR    | handlers.admin_handlers | _get_youtube_accounts | 862 | Error getting YouTube accounts: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:44:14 | ERROR    | handlers.admin_handlers | _get_youtube_accounts_count | 843 | Error getting YouTube accounts count: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:44:37 | ERROR    | handlers.admin_handlers | _save_youtube_account | 887 | Error saving YouTube account mrspeed717@gmail.com: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:44:49 | ERROR    | handlers.admin_handlers | _extract_cookies_from_browser | 952 | Failed to extract cookies from chrome: Traceback (most recent call last):
+  File "D:\laptop\React-Project\Srv-youtube\amir\extract_cookies.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "D:\laptop\React-Project\Srv-youtube\amir\extract_cookies.py", line 68, in main
+    print(f"\U0001f50d \u062f\u0631 \u062d\u0627\u0644 \u0627\u0633\u062a\u062e\u0631\u0627\u062c \u06a9\u0648\u06a9\u06cc\u200c\u0647\u0627\u06cc {args.domain} \u0627\u0632 \u0645\u0631\u0648\u0631\u06af\u0631 {args.browser}...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+None
+2025-09-05 21:46:57 | ERROR    | handlers.admin_handlers | _get_youtube_accounts | 862 | Error getting YouTube accounts: 'Database' object has no attribute 'execute'
+None
+2025-09-05 21:53:10 | ERROR    | handlers.admin_handlers | _extract_cookies_from_browser | 952 | Failed to extract cookies from chrome: Traceback (most recent call last):
+  File "D:\laptop\React-Project\Srv-youtube\amir\extract_cookies.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "D:\laptop\React-Project\Srv-youtube\amir\extract_cookies.py", line 68, in main
+    print(f"\U0001f50d \u062f\u0631 \u062d\u0627\u0644 \u0627\u0633\u062a\u062e\u0631\u0627\u062c \u06a9\u0648\u06a9\u06cc\u200c\u0647\u0627\u06cc {args.domain} \u0627\u0632 \u0645\u0631\u0648\u0631\u06af\u0631 {args.browser}...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+None
+2025-09-05 21:53:18 | ERROR    | handlers.admin_handlers | _get_youtube_accounts | 862 | Error getting YouTube accounts: object list can't be used in 'await' expression
+None
+2025-09-05 21:56:15 | ERROR    | handlers.admin_handlers | _extract_cookies_from_browser | 952 | Failed to extract cookies from chrome: Traceback (most recent call last):
+  File "D:\laptop\React-Project\Srv-youtube\amir\extract_cookies.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "D:\laptop\React-Project\Srv-youtube\amir\extract_cookies.py", line 68, in main
+    print(f"\U0001f50d \u062f\u0631 \u062d\u0627\u0644 \u0627\u0633\u062a\u062e\u0631\u0627\u062c \u06a9\u0648\u06a9\u06cc\u200c\u0647\u0627\u06cc {args.domain} \u0627\u0632 \u0645\u0631\u0648\u0631\u06af\u0631 {args.browser}...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+None
+2025-09-05 21:56:33 | ERROR    | utils.database       | execute         | 559 | ❌ Error executing query: database is locked
+None
+2025-09-05 21:56:33 | ERROR    | handlers.admin_handlers | _update_youtube_account_status | 900 | Error updating YouTube account mrspeed717@gmail.com: database is locked
+None
+2025-09-05 21:56:48 | ERROR    | utils.database       | execute         | 559 | ❌ Error executing query: database is locked
+None
+2025-09-05 21:56:48 | ERROR    | handlers.admin_handlers | _update_youtube_account_status | 900 | Error updating YouTube account mrspeed717@gmail.com: database is locked
+None
+2025-09-05 21:59:29 | ERROR    | services.download_service | get_download_info | 477 | Info extraction error: [0;31mERROR:[0m [youtube] vi5VWglolAI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 21:59:52 | ERROR    | services.download_service | get_download_info | 477 | Info extraction error: [0;31mERROR:[0m [youtube] vi5VWglolAI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 22:04:57 | ERROR    | services.download_service | get_download_info | 477 | Info extraction error: [0;31mERROR:[0m [youtube] 5EBYqxupgFU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 22:05:07 | ERROR    | services.download_service | get_download_info | 477 | Info extraction error: [0;31mERROR:[0m [youtube] 5EBYqxupgFU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+None
+2025-09-05 22:12:08 | ERROR    | services.download_service | get_download_info | 474 | Timeout while extracting info for: https://www.youtube.com/watch?v=vi5VWglolAI&list=RDvi5VWglolAI&start_radio=1
+None
+2025-09-05 22:12:38 | ERROR    | services.download_service | get_download_info | 474 | Timeout while extracting info for: https://www.youtube.com/watch?v=vi5VWglolAI&list=RDvi5VWglolAI&start_radio=1
+None
+2025-09-05 22:14:07 | ERROR    | services.download_service | get_download_info | 474 | Timeout while extracting info for: https://www.youtube.com/watch?v=vi5VWglolAI&list=RDvi5VWglolAI&start_radio=1
+None
+2025-09-05 22:14:30 | ERROR    | services.download_service | _download_media | 225 | yt-dlp download error: [0;31mERROR:[0m [0;31mERROR:[0m Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info
+None
+2025-09-05 22:14:37 | ERROR    | services.download_service | get_download_info | 474 | Timeout while extracting info for: https://www.youtube.com/watch?v=vi5VWglolAI&list=RDvi5VWglolAI&start_radio=1
+None
+2025-09-05 22:16:11 | ERROR    | utils.network        | get_public_ip   | 179 | ❌ Failed to get public IP: 
+None
+2025-09-05 22:17:33 | ERROR    | services.download_service | _download_media | 225 | yt-dlp download error: [0;31mERROR:[0m [youtube] LSH2W6Aw-7A: Unable to download API page: [Errno 11001] getaddrinfo failed (caused by TransportError('[Errno 11001] getaddrinfo failed'))
+None
+2025-09-05 22:21:22 | ERROR    | services.download_service | _download_media | 225 | yt-dlp download error: [0;31mERROR:[0m [youtube] LSH2W6Aw-7A: Unable to download API page: [Errno 11001] getaddrinfo failed (caused by TransportError('[Errno 11001] getaddrinfo failed'))
+None
+2025-09-05 22:25:56 | ERROR    | services.download_service | _download_media | 225 | yt-dlp download error: [0;31mERROR:[0m [youtube] 49xCueGe5mo: Unable to download API page: [Errno 11001] getaddrinfo failed (caused by TransportError('[Errno 11001] getaddrinfo failed'))
+None
+2025-09-05 22:26:57 | ERROR    | telethon.network.mtprotosender | _reconnect      | 412 | Automatic reconnection failed 3 time(s)
+None
+2025-09-05 22:30:35 | ERROR    | telethon.client.updates | _update_loop    | 469 | Fatal error handling updates (this is a bug in Telethon v1.36.0, please report it)
+(<class 'RuntimeError'>, RuntimeError('Should not be applying the difference when neither account or secret was diff was active'), <traceback object at 0x0000014195B92F00>)
+Traceback (most recent call last):
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\updates.py", line 342, in _update_loop
+    updates, users, chats = self._message_box.apply_difference(diff, self._mb_entity_cache)
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\speedster\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\_updates\messagebox.py", line 667, in apply_difference
+    raise RuntimeError('Should not be applying the difference when neither account or secret was diff was active')
+RuntimeError: Should not be applying the difference when neither account or secret was diff was active
+2025-09-05 22:31:24 | ERROR    | services.download_service | _download_media | 225 | yt-dlp download error: [0;31mERROR:[0m [youtube:tab] RDvi5VWglolAI: Playlists that require authentication may not extract correctly without a successful webpage download. If you are not downloading private content, or your cookies are only for the first account and channel, pass "--extractor-args youtubetab:skip=authcheck" to skip this check
+None
+2025-09-05 22:31:40 | ERROR    | services.download_service | _download_media | 225 | yt-dlp download error: [0;31mERROR:[0m [youtube:tab] RDvi5VWglolAI: Playlists that require authentication may not extract correctly without a successful webpage download. If you are not downloading private content, or your cookies are only for the first account and channel, pass "--extractor-args youtubetab:skip=authcheck" to skip this check
+None
+2025-09-05 22:38:51 | ERROR    | services.download_service | _download_media | 225 | yt-dlp download error: [0;31mERROR:[0m [youtube] SpktCnwLvIE: Unable to download API page: [Errno 11001] getaddrinfo failed (caused by TransportError('[Errno 11001] getaddrinfo failed'))
+None
+2025-09-05 22:41:14 | ERROR    | services.download_service | _download_media | 209 | yt-dlp download error: [0;31mERROR:[0m [youtube] SpktCnwLvIE: Unable to download API page: [Errno 11001] getaddrinfo failed (caused by TransportError('[Errno 11001] getaddrinfo failed'))
+None
+2025-09-05 22:43:35 | ERROR    | services.download_service | _download_media | 209 | yt-dlp download error: [0;31mERROR:[0m [youtube] SpktCnwLvIE: Unable to download API page: [Errno 11001] getaddrinfo failed (caused by TransportError('[Errno 11001] getaddrinfo failed'))
+None
+2025-09-05 22:47:30 | ERROR    | services.download_service | _download_media | 209 | yt-dlp download error: [0;31mERROR:[0m [youtube] EPo5wWmKEaI: Unable to download API page: [Errno 11001] getaddrinfo failed (caused by TransportError('[Errno 11001] getaddrinfo failed'))
+None
+2025-09-05 22:49:58 | ERROR    | services.download_service | _download_media | 209 | yt-dlp download error: [0;31mERROR:[0m [youtube] zoyctsgMwq0: Unable to download API page: [Errno 11001] getaddrinfo failed (caused by TransportError('[Errno 11001] getaddrinfo failed'))
+None
+2025-09-05 23:00:02 | ERROR    | handlers.bot_handlers | get_available_qualities | 377 | Error getting available qualities: 'DownloadService' object has no attribute 'get_download_info'
+None
+2025-09-05 23:00:02 | ERROR    | handlers.bot_handlers | handle_youtube_url | 483 | Error in handle_youtube_url: 'DownloadService' object has no attribute 'get_download_info'
+None
+2025-09-05 23:00:40 | ERROR    | handlers.bot_handlers | get_available_qualities | 377 | Error getting available qualities: 'DownloadService' object has no attribute 'get_download_info'
+None
+2025-09-05 23:00:40 | ERROR    | handlers.bot_handlers | handle_youtube_url | 483 | Error in handle_youtube_url: 'DownloadService' object has no attribute 'get_download_info'
+None
+2025-09-05 23:01:58 | ERROR    | handlers.bot_handlers | get_available_qualities | 377 | Error getting available qualities: 'DownloadService' object has no attribute 'get_download_info'
+None
+2025-09-05 23:01:58 | ERROR    | handlers.bot_handlers | handle_youtube_url | 483 | Error in handle_youtube_url: 'DownloadService' object has no attribute 'get_download_info'
+None
+2025-09-05 23:02:31 | ERROR    | services.download_service | get_download_info | 540 | Info extraction error: HTTP Error 400: Bad Request
+None
+2025-09-05 23:02:34 | ERROR    | services.download_service | get_download_info | 540 | Info extraction error: HTTP Error 400: Bad Request
+None
+2025-09-05 23:03:46 | ERROR    | services.download_service | get_download_info | 540 | Info extraction error: HTTP Error 400: Bad Request
+None
+2025-09-05 23:03:49 | ERROR    | services.download_service | get_download_info | 540 | Info extraction error: HTTP Error 400: Bad Request
+None
+2025-09-05 23:06:17 | ERROR    | services.download_service | get_download_info | 505 | YouTube info extraction error: HTTP Error 400: Bad Request
+None
+2025-09-05 23:06:23 | ERROR    | services.download_service | get_download_info | 505 | YouTube info extraction error: HTTP Error 400: Bad Request
+None
+2025-09-05 23:06:33 | ERROR    | services.download_service | _get_stream_by_quality | 203 | Error getting stream: HTTP Error 400: Bad Request
+None
+2025-09-05 23:06:33 | ERROR    | services.download_service | download        | 178 | Download error: HTTP Error 400: Bad Request
+None
+2025-09-05 23:06:51 | ERROR    | services.download_service | _get_stream_by_quality | 203 | Error getting stream: HTTP Error 400: Bad Request
+None
+2025-09-05 23:06:51 | ERROR    | services.download_service | download        | 178 | Download error: HTTP Error 400: Bad Request
+None
+2025-09-05 23:10:10 | ERROR    | services.download_service | _download_media | 334 | Download error: 'DownloadService' object has no attribute '_get_ydl_opts'
+None
+2025-09-05 23:14:46 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:14:48 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:14:49 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:14:51 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:14:53 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:14:54 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:14:56 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:14:58 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:14:59 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:33:05 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:33:06 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:36 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:38 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:39 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:40 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:41 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:43 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:45 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:46 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:47 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:49 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:50 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:52 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:53 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:54 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:56 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:58 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:34:59 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:35:00 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:35:01 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:35:03 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:35:04 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:35:05 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:35:06 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:35:08 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:35:09 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None
+2025-09-05 23:35:10 | ERROR    | services.download_service | __call__        | 61 | Error in progress callback: There is no current event loop in thread 'asyncio_0'.
+None

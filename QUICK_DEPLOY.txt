@@ -1,0 +1,86 @@
+🚀 راه‌اندازی سریع بات تلگرام - یک دستور
+==============================================
+
+📋 فایل‌های ایجاد شده:
+✅ Dockerfile - تصویر Docker
+✅ docker-compose.yml - تنظیمات اصلی
+✅ docker-compose.prod.yml - تنظیمات تولید
+✅ .env.example - نمونه متغیرهای محیطی
+✅ .dockerignore - فایل‌های نادیده گرفته شده
+✅ deploy.sh - اسکریپت مدیریت (Linux/Mac)
+✅ deploy.bat - اسکریپت مدیریت (Windows)
+✅ quick-start.sh - راه‌اندازی سریع
+✅ Makefile - دستورات Make
+✅ DEPLOYMENT_GUIDE.md - راهنمای استقرار
+✅ ONE_COMMAND_DEPLOY.md - راهنمای یک دستوری
+
+🎯 دستورات اصلی:
+
+=== Windows ===
+deploy.bat start     # شروع بات
+deploy.bat stop      # توقف بات
+deploy.bat logs      # مشاهده لاگ‌ها
+deploy.bat status    # وضعیت بات
+deploy.bat restart   # راه‌اندازی مجدد
+
+=== Linux/macOS ===
+./deploy.sh start    # شروع بات
+./deploy.sh stop     # توقف بات
+./deploy.sh logs     # مشاهده لاگ‌ها
+./deploy.sh status   # وضعیت بات
+./quick-start.sh     # راه‌اندازی کامل
+
+=== Make Commands ===
+make quick          # راه‌اندازی کامل
+make start          # شروع
+make stop           # توقف
+make logs           # لاگ‌ها
+make status         # وضعیت
+
+⚙️ تنظیمات اولیه:
+
+1. کپی فایل .env:
+   copy .env.example .env
+
+2. ویرایش .env با اطلاعات بات:
+   BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
+   API_ID=12345678
+   API_HASH=abcdef1234567890abcdef1234567890
+   ADMIN_IDS=123456789,987654321
+
+3. شروع بات:
+   deploy.bat start
+
+🔧 پیش‌نیازها:
+- Docker Desktop (Windows/Mac)
+- Docker + Docker Compose (Linux)
+
+📊 نظارت:
+- لاگ‌ها: deploy.bat logs
+- وضعیت: deploy.bat status
+- منابع: docker stats telegram-userbot-downloader
+
+🛡️ امنیت:
+- فایل .env را محرمانه نگه دارید
+- فقط از محتوای قانونی استفاده کنید
+- Admin IDs را درست تنظیم کنید
+
+❗ عیب‌یابی:
+- اگر بات شروع نشد: deploy.bat logs
+- اگر Docker نصب نیست: نصب Docker Desktop
+- اگر خطای اتصال: بررسی BOT_TOKEN
+
+🎉 با یک دستور آماده!
+
+Windows: deploy.bat start
+Linux: ./quick-start.sh
+
+📚 مستندات کامل:
+- README.md
+- SETUP_GUIDE.md  
+- DEPLOYMENT_GUIDE.md
+- ONE_COMMAND_DEPLOY.md
+
+==============================================
+🤖 بات تلگرام شما آماده استقرار است!
+==============================================

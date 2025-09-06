@@ -1,0 +1,133 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+PIPFILE.lock
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+temp_downloads/
+*.tmp
+*.temp
+
+# Session files (will be mounted as volumes)
+sessions/
+*.session
+*.session-journal
+
+# Database files (will be mounted as volumes)
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Documentation
+*.md
+README*
+CHANGELOG*
+LICENSE*
+
+# Docker files
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Deployment scripts
+deploy.sh
+deploy.bat
+
+# Backup files
+backup_*/
+*.bak
+
+# Media files
+*.mp4
+*.mp3
+*.avi
+*.mkv
+*.mov
+*.wmv
+*.flv
+*.webm
+*.m4a
+*.wav
+*.flac
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.ico
+
+# Downloads
+Downloads/
+
+# Test files
+test_*
+*_test.py
+tests/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Node modules (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

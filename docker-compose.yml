@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-userbot-downloader
+    restart: unless-stopped
+    
+    # Environment variables
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - API_ID=${API_ID}
+      - API_HASH=${API_HASH}
+      - ADMIN_IDS=${ADMIN_IDS}
+      - LOG_LEVEL=INFO
+      - CONSOLE_LOG_LEVEL=INFO
+      - FILE_LOG_LEVEL=DEBUG
+      - MAX_SESSIONS=3
+      - MAX_FILE_SIZE=52428800  # 50MB
+      - PROXY_ENABLED=false
+      - PROXY_TYPE=socks5
+      - PROXY_HOST=127.0.0.1
+      - PROXY_PORT=1080
+    
+    # Volumes for persistent data
+    volumes:
+      - ./sessions:/app/sessions
+      - ./logs:/app/logs
+      - ./temp_downloads:/app/temp_downloads
+      - ./userbot_manager.db:/app/userbot_manager.db
+    
+    # Network configuration
+    networks:
+      - bot-network
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.5'
+        reservations:
+          memory: 256M
+          cpus: '0.25'
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  bot-network:
+    driver: bridge
+
+volumes:
+  bot-sessions:
+  bot-logs:
+  bot-temp:
