@@ -5,7 +5,7 @@ def install_requirements():
     """نصب کتابخانه‌های مورد نیاز"""
     requirements = [
         'browser_cookie3',
-        'yt-dlp',
+    
         'PySocks'
     ]
     

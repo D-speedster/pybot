@@ -1,6 +1,7 @@
 import os
 import asyncio
-import yt_dlp
+from pytube import YouTube
+from pytube.exceptions import PytubeError
 from telethon import events, Button
 from telethon.tl.types import DocumentAttributeVideo, DocumentAttributeAudio
 from utils.progress_manager import ProgressManager, TelethonProgressHook
@@ -19,19 +20,60 @@ class YouTubeDownloader:
             os.makedirs(self.downloads_path)
     
     async def get_video_info(self, url: str) -> dict:
-        """دریافت اطلاعات ویدیو"""
-        ydl_opts = {
-            'quiet': True,
-            'no_warnings': True,
-            'extract_flat': False,
-        }
-        
+        """دریافت اطلاعات ویدیو با pytube"""
         try:
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                info = await asyncio.get_event_loop().run_in_executor(
-                    None, ydl.extract_info, url, False
-                )
-                return info
+            # ایجاد شیء YouTube
+            yt = YouTube(url)
+            
+            # استخراج فرمت‌های موجود
+            formats = []
+            for stream in yt.streams.filter(progressive=True, file_extension='mp4'):
+                formats.append({
+                    'format_id': str(stream.itag),
+                    'ext': stream.mime_type.split('/')[-1],
+                    'height': int(stream.resolution.replace('p', '')) if stream.resolution else None,
+                    'filesize': stream.filesize,
+                    'fps': stream.fps,
+                    'vcodec': 'h264',
+                    'acodec': 'aac'
+                })
+            
+            # اضافه کردن فرمت‌های adaptive (کیفیت بالا)
+            for stream in yt.streams.filter(adaptive=True, file_extension='mp4'):
+                if stream.video_codec:  # فقط ویدیو
+                    formats.append({
+                        'format_id': str(stream.itag),
+                        'ext': stream.mime_type.split('/')[-1],
+                        'height': int(stream.resolution.replace('p', '')) if stream.resolution else None,
+                        'filesize': stream.filesize,
+                        'fps': stream.fps,
+                        'vcodec': stream.video_codec,
+                        'acodec': 'none'
+                    })
+            
+            # اضافه کردن فرمت‌های صوتی
+            for stream in yt.streams.filter(only_audio=True):
+                formats.append({
+                    'format_id': str(stream.itag),
+                    'ext': stream.mime_type.split('/')[-1],
+                    'height': None,
+                    'filesize': stream.filesize,
+                    'abr': stream.abr,
+                    'vcodec': 'none',
+                    'acodec': stream.audio_codec
+                })
+            
+            return {
+                'title': yt.title,
+                'duration': yt.length,
+                'view_count': yt.views,
+                'uploader': yt.author,
+                'thumbnail': yt.thumbnail_url,
+                'formats': formats
+            }
+                
+        except PytubeError as e:
+            raise Exception(f"خطا در pytube: {str(e)}")
         except Exception as e:
             raise Exception(f"خطا در دریافت اطلاعات: {str(e)}")
     
@@ -98,59 +140,56 @@ class YouTubeDownloader:
         return buttons
     
     async def download_video(self, url: str, format_id: str, progress_manager: ProgressManager, audio_only: bool = False):
-        """دانلود ویدیو یا صوت"""
-        
-        # تنظیمات دانلود
-        if audio_only:
-            ydl_opts = {
-                'format': 'bestaudio/best',
-                'outtmpl': os.path.join(self.downloads_path, '%(title)s.%(ext)s'),
-                'postprocessors': [{
-                    'key': 'FFmpegExtractAudio',
-                    'preferredcodec': 'mp3',
-                    'preferredquality': '192',
-                }],
-                'quiet': True,
-                'no_warnings': True,
-            }
-        else:
-            ydl_opts = {
-                'format': format_id,
-                'outtmpl': os.path.join(self.downloads_path, '%(title)s.%(ext)s'),
-                'quiet': True,
-                'no_warnings': True,
-            }
-        
-        # اضافه کردن progress hook
-        progress_hook = TelethonProgressHook(progress_manager)
-        ydl_opts['progress_hooks'] = [progress_hook]
+        """دانلود ویدیو یا صوت با pytube"""
         
         try:
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                # دانلود فایل
-                await asyncio.get_event_loop().run_in_executor(
-                    None, ydl.download, [url]
-                )
+            # ایجاد شیء YouTube
+            yt = YouTube(url)
+            
+            # انتخاب stream بر اساس نوع دانلود
+            if audio_only:
+                stream = yt.streams.filter(only_audio=True).first()
+                if not stream:
+                    raise Exception("هیچ stream صوتی پیدا نشد")
+            else:
+                # پیدا کردن stream بر اساس format_id (itag)
+                try:
+                    itag = int(format_id)
+                    stream = yt.streams.get_by_itag(itag)
+                except (ValueError, TypeError):
+                    # اگر format_id معتبر نیست، بهترین کیفیت را انتخاب کن
+                    stream = yt.streams.get_highest_resolution()
                 
-                # پیدا کردن فایل دانلود شده
-                info = await asyncio.get_event_loop().run_in_executor(
-                    None, ydl.extract_info, url, False
-                )
+                if not stream:
+                    stream = yt.streams.get_highest_resolution()
+                    if not stream:
+                        raise Exception("هیچ stream ویدیویی پیدا نشد")
+            
+            # تنظیم progress callback
+            def progress_callback(stream, chunk, bytes_remaining):
+                total_size = stream.filesize
+                bytes_downloaded = total_size - bytes_remaining
+                percent = (bytes_downloaded / total_size) * 100
                 
-                title = info.get('title', 'video')
-                
-                # پیدا کردن فایل
-                for file in os.listdir(self.downloads_path):
-                    if title.replace('/', '_').replace('\\', '_') in file:
-                        return os.path.join(self.downloads_path, file)
-                
-                # اگر فایل پیدا نشد، اولین فایل را برگردان
-                files = [f for f in os.listdir(self.downloads_path) if f.endswith(('.mp4', '.webm', '.mkv', '.mp3'))]
-                if files:
-                    return os.path.join(self.downloads_path, files[-1])
-                
+                # ارسال پیشرفت به progress manager
+                if hasattr(progress_manager, 'update_progress'):
+                    asyncio.create_task(progress_manager.update_progress(percent))
+            
+            # تنظیم callback
+            yt.register_on_progress_callback(progress_callback)
+            
+            # دانلود فایل
+            file_path = await asyncio.get_event_loop().run_in_executor(
+                None, stream.download, self.downloads_path
+            )
+            
+            if not os.path.exists(file_path):
                 raise Exception("فایل دانلود شده پیدا نشد")
                 
+            return file_path
+                
+        except PytubeError as e:
+            raise Exception(f"خطا در pytube: {str(e)}")
         except Exception as e:
             raise Exception(f"خطا در دانلود: {str(e)}")
 

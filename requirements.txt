@@ -3,7 +3,6 @@ telethon==1.36.0
 pyrogram==2.0.106
 
 # Download libraries
-yt-dlp==2025.8.27
 instaloader==4.10.3
 pytube>=15.0.0
 

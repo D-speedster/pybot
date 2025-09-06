@@ -7,12 +7,9 @@ from pathlib import Path
 from typing import Dict, Any, Optional, Callable
 import tempfile
 
-# جایگزینی yt-dlp با pytube
+# استفاده از pytube برای دانلود یوتیوب
 from pytube import YouTube, Stream
 from pytube.exceptions import PytubeError
-
-# برای پشتیبانی از انتقال، yt-dlp را هم نگه می‌داریم
-import yt_dlp
 
 from config import DOWNLOAD_CONFIG, QUALITY_OPTIONS
 from services.session_manager import SessionManager
@@ -21,7 +18,7 @@ from utils.helpers import FileUtils, TextUtils
 logger = logging.getLogger(__name__)
 
 class ProgressHook:
-    """Progress hook for yt-dlp downloads"""
+    """Progress hook for pytube downloads"""
     
     def __init__(self, callback: Optional[Callable] = None):
         self.callback = callback
@@ -120,6 +117,28 @@ class PytubeDownloader:
     def __init__(self):
         self.temp_dir = DOWNLOAD_CONFIG['temp_dir']
     
+    def _get_stream_by_quality(self, yt: YouTube, quality: str) -> Optional[Stream]:
+        """Get the best stream based on quality preference"""
+        try:
+            if quality == 'highest':
+                return yt.streams.get_highest_resolution()
+            elif quality == 'lowest':
+                return yt.streams.get_lowest_resolution()
+            elif quality == 'audio':
+                return yt.streams.filter(only_audio=True).first()
+            elif quality in ['720p', '480p', '360p', '240p', '144p']:
+                # Try to get specific resolution
+                stream = yt.streams.filter(res=quality, file_extension='mp4').first()
+                if stream:
+                    return stream
+                # Fallback to best available
+                return yt.streams.get_highest_resolution()
+            else:
+                return yt.streams.get_highest_resolution()
+        except Exception as e:
+            logger.error(f"Error getting stream: {e}")
+            return yt.streams.first()  # Return any available stream as fallback
+    
     async def download(self, url: str, quality: str, progress_callback: Optional[Callable] = None) -> Dict[str, Any]:
         """Download a YouTube video using pytube"""
         temp_download_dir = Path(tempfile.mkdtemp(dir=self.temp_dir))
@@ -152,7 +171,7 @@ class PytubeDownloader:
                 'title': yt.title,
                 'uploader': yt.author,
                 'duration': yt.length,
-                'width': stream.resolution.split('x')[0] if stream.resolution else 0,
+                'width': int(stream.resolution.split('x')[0]) if stream.resolution else 0,
                 'height': stream.resolution.split('x')[1] if stream.resolution else 0
             }
             
@@ -279,62 +298,7 @@ class DownloadService:
             if download_id in self.active_downloads:
                 del self.active_downloads[download_id]
     
-    def _get_ydl_opts(self, platform: str, quality: str, temp_download_dir: Path, progress_hook: ProgressHook) -> Dict[str, Any]:
-        """Get yt-dlp options based on platform and quality"""
-        
-        # Base options
-        ydl_opts = {
-            'format': QUALITY_OPTIONS.get(quality, 'best'),
-            'outtmpl': str(temp_download_dir / '%(title)s.%(ext)s'),
-            'progress_hooks': [progress_hook],
-            'quiet': True,
-            'no_warnings': True,
-            'ignoreerrors': True,
-            'socket_timeout': 60,  # Increased timeout for better reliability
-            'source_address': '0.0.0.0',  # Use any available network interface
-            'force_ipv4': True,  # Force IPv4 to avoid IPv6 issues
-            'geo_bypass': True,  # Bypass geo-restrictions
-            'geo_bypass_country': 'US',
-            'nocheckcertificate': True,  # Skip HTTPS certificate validation
-            'simulate_browser': True,  # Simulate a browser to avoid detection
-        }
-        
-        # Add cookies for YouTube authentication
-        cookies_file = Path('cookies.txt')
-        if cookies_file.exists():
-            ydl_opts['cookiefile'] = str(cookies_file)
-            logger.info(f"Using cookies file: {cookies_file}")
-        
-        # Platform-specific options
-        if platform == 'youtube':
-            ydl_opts.update({
-                'writethumbnail': False,  # Don't download thumbnail
-                'writesubtitles': False,  # Don't download subtitles
-                'subtitleslangs': ['en'],  # English subtitles only
-                'skip_download': False,  # Download the video
-                'postprocessors': [],  # No post-processing
-            })
-            
-            # Audio-only options
-            if 'audio' in quality:
-                ydl_opts.update({
-                    'format': 'bestaudio/best',
-                    'postprocessors': [{
-                        'key': 'FFmpegExtractAudio',
-                        'preferredcodec': 'mp3',
-                        'preferredquality': '192',
-                    }],
-                })
-        
-        # Instagram options
-        elif platform == 'instagram':
-            ydl_opts.update({
-                'extract_flat': False,
-                'dump_single_json': False,
-                'force_generic_extractor': False,
-            })
-        
-        return ydl_opts
+
     
     async def _download_media(
         self,
@@ -343,50 +307,56 @@ class DownloadService:
         quality: str,
         progress_hook: ProgressHook
     ) -> Dict[str, Any]:
-        """Download media using appropriate downloader based on platform"""
+        """Download media using pytube for YouTube"""
         
-        # Use yt-dlp for all platforms including YouTube
-        # This is more reliable than pytube which often gives HTTP 400 errors
-        logger.info(f"Using yt-dlp downloader for URL: {url}")
+        if platform != 'youtube':
+            return {'success': False, 'error': f'Platform {platform} not supported. Only YouTube is supported.'}
+        
+        logger.info(f"Using pytube downloader for URL: {url}")
         
         temp_download_dir = Path(tempfile.mkdtemp(dir=self.temp_dir))
         
         try:
-            # Configure yt-dlp options
-            ydl_opts = self._get_ydl_opts(platform, quality, temp_download_dir, progress_hook)
+            # Create progress callback
+            progress_handler = PytubeProgressCallback(progress_hook.callback if hasattr(progress_hook, 'callback') else None)
             
-            # Download the media
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                info = await asyncio.get_event_loop().run_in_executor(
-                    None, lambda: ydl.extract_info(url, download=True)
-                )
+            # Initialize YouTube object
+            yt = YouTube(url, on_progress_callback=progress_handler)
+            
+            # Get stream based on quality
+            stream = self._get_stream_by_quality(yt, quality)
+            if not stream:
+                return {'success': False, 'error': f'No stream available for quality: {quality}'}
+            
+            # Set filesize for progress calculation
+            progress_handler.set_filesize(stream.filesize)
+            
+            # Download the video
+            file_path = Path(stream.download(output_path=str(temp_download_dir)))
+            
+            if not file_path.exists():
+                return {'success': False, 'error': 'Download failed: File not found after download'}
+            
+            file_size = file_path.stat().st_size
+            
+            # Determine media type
+            media_type = 'video' if stream.includes_video_track else 'audio'
+            
+            return {
+                'success': True,
+                'file_path': str(file_path),
+                'file_size': file_size,
+                'media_type': media_type,
+                'title': yt.title,
+                'uploader': yt.author,
+                'duration': yt.length,
+                'width': int(stream.resolution.split('x')[0]) if stream.resolution else 0,
+                'height': int(stream.resolution.split('x')[1]) if stream.resolution else 0
+            }
                 
-                if not info:
-                    return {'success': False, 'error': 'Could not extract info'}
-                
-                # Find the downloaded file
-                downloaded_files = list(temp_download_dir.glob('*'))
-                if not downloaded_files:
-                    return {'success': False, 'error': 'No files found after download'}
-                
-                file_path = downloaded_files[0]
-                file_size = file_path.stat().st_size
-                
-                # Determine media type
-                media_type = self._get_media_type(file_path, info)
-                
-                return {
-                    'success': True,
-                    'file_path': str(file_path),
-                    'file_size': file_size,
-                    'media_type': media_type,
-                    'title': info.get('title', 'Unknown'),
-                    'uploader': info.get('uploader', 'Unknown'),
-                    'duration': info.get('duration', 0),
-                    'width': info.get('width', 0),
-                    'height': info.get('height', 0)
-                }
-                
+        except PytubeError as e:
+            logger.error(f"Pytube error: {e}")
+            return {'success': False, 'error': f'Pytube error: {str(e)}'}
         except Exception as e:
             logger.error(f"Download error: {e}")
             return {'success': False, 'error': str(e)}
@@ -394,65 +364,30 @@ class DownloadService:
         finally:
             # Schedule cleanup
             asyncio.create_task(self._cleanup_temp_dir(temp_download_dir))
-        
-        # All platforms are now handled by yt-dlp in the code above
     
-    async def _get_ydl_options(self, platform: str, quality: str, output_dir: Path, progress_hook: ProgressHook) -> Dict[str, Any]:
-        """Get yt-dlp options based on platform and quality"""
-        
-        # Base options
-        ydl_opts = {
-            'format': QUALITY_OPTIONS.get(quality, 'best'),
-            'outtmpl': str(output_dir / '%(title)s.%(ext)s'),
-            'progress_hooks': [progress_hook],
-            'quiet': True,
-            'no_warnings': True,
-            'ignoreerrors': True,
-            'socket_timeout': 60,  # Increased timeout for better reliability
-            'source_address': '0.0.0.0',  # Use any available network interface
-            'force_ipv4': True,  # Force IPv4 to avoid IPv6 issues
-            'geo_bypass': True,  # Bypass geo-restrictions
-            'geo_bypass_country': 'US',
-            'nocheckcertificate': True,  # Skip HTTPS certificate validation
-            'simulate_browser': True,  # Simulate a browser to avoid detection
-        }
-        
-        # Add cookies for YouTube authentication
-        cookies_file = Path('cookies.txt')
-        if cookies_file.exists():
-            ydl_opts['cookiefile'] = str(cookies_file)
-            logger.info(f"Using cookies file: {cookies_file}")
-        
-        # Platform-specific options
-        if platform == 'youtube':
-            ydl_opts.update({
-                'writethumbnail': False,  # Don't download thumbnail
-                'writesubtitles': False,  # Don't download subtitles
-                'subtitleslangs': ['en'],  # English subtitles only
-                'skip_download': False,  # Download the video
-                'postprocessors': [],  # No post-processing
-            })
-            
-            # Audio-only options
-            if 'audio' in quality:
-                ydl_opts.update({
-                    'format': 'bestaudio/best',
-                    'postprocessors': [{
-                        'key': 'FFmpegExtractAudio',
-                        'preferredcodec': 'mp3',
-                        'preferredquality': '192',
-                    }],
-                })
-        
-        # Instagram options
-        elif platform == 'instagram':
-            ydl_opts.update({
-                'extract_flat': False,
-                'dump_single_json': False,
-                'force_generic_extractor': False,
-            })
-        
-        return ydl_opts
+    def _get_stream_by_quality(self, yt: YouTube, quality: str) -> Optional[Stream]:
+        """Get the best stream based on quality preference"""
+        try:
+            if quality == 'highest':
+                return yt.streams.get_highest_resolution()
+            elif quality == 'lowest':
+                return yt.streams.get_lowest_resolution()
+            elif quality == 'audio':
+                return yt.streams.filter(only_audio=True).first()
+            elif quality in ['720p', '480p', '360p', '240p', '144p']:
+                # Try to get specific resolution
+                stream = yt.streams.filter(res=quality, file_extension='mp4').first()
+                if stream:
+                    return stream
+                # Fallback to best available
+                return yt.streams.get_highest_resolution()
+            else:
+                return yt.streams.get_highest_resolution()
+        except Exception as e:
+            logger.error(f"Error getting stream: {e}")
+            return yt.streams.first()  # Return any available stream as fallback
+    
+
     
     def _get_platform(self, url: str) -> str:
         """Determine platform from URL"""
@@ -485,74 +420,58 @@ class DownloadService:
         return 'video'
     
     async def get_download_info(self, url: str) -> Dict[str, Any]:
-        """Get detailed download information including available formats"""
+        """Get detailed download information using pytube"""
         try:
             # Determine platform
             platform = self._get_platform(url)
             
-            # Use yt-dlp for all platforms including YouTube
-            logger.info(f"Using yt-dlp to extract info for URL: {url}")
+            if platform != 'youtube':
+                return {'success': False, 'error': f'Platform {platform} not supported. Only YouTube is supported.'}
             
-            # Use the _get_ydl_opts method to get options
-            temp_dir = Path(tempfile.mkdtemp(dir=self.temp_dir))
-            progress_hook = ProgressHook(None)
+            logger.info(f"Using pytube to extract info for URL: {url}")
             
             try:
-                # Get yt-dlp options
-                ydl_opts = self._get_ydl_opts(platform, 'best', temp_dir, progress_hook)
+                # Initialize YouTube object
+                yt = YouTube(url)
                 
-                # Add additional options for info extraction
-                ydl_opts.update({
-                    'skip_download': True,
-                    'format': 'best',
-                    'retries': 10,
-                    'fragment_retries': 10,
-                })
+                # Get available streams
+                streams = yt.streams.all()
+                formats = []
                 
-                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                    info = await asyncio.get_event_loop().run_in_executor(
-                        None, lambda: ydl.extract_info(url, download=False)
-                    )
-                    
-                    if not info:
-                        # Try with a different user agent if first attempt fails
-                        ydl_opts['user_agent'] = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
-                        if 'http_headers' in ydl_opts:
-                            ydl_opts['http_headers']['User-Agent'] = ydl_opts['user_agent']
-                        
-                        with yt_dlp.YoutubeDL(ydl_opts) as ydl2:
-                            info = await asyncio.get_event_loop().run_in_executor(
-                                None, lambda: ydl2.extract_info(url, download=False)
-                            )
-                    
-                    if not info:
-                        return {'success': False, 'error': 'Could not extract info'}
-                    
-                    return {
-                        'success': True,
-                        'title': info.get('title', 'Unknown'),
-                        'uploader': info.get('uploader', 'Unknown'),
-                        'duration': info.get('duration', 0),
-                        'thumbnail': info.get('thumbnail', ''),
-                        'platform': platform,
-                        'formats': info.get('formats', []),
-                        'filesize': info.get('filesize') or info.get('filesize_approx') or 0
+                for stream in streams:
+                    format_info = {
+                        'format_id': stream.itag,
+                        'ext': stream.mime_type.split('/')[-1] if stream.mime_type else 'mp4',
+                        'resolution': stream.resolution,
+                        'fps': stream.fps,
+                        'filesize': stream.filesize,
+                        'abr': stream.abr,
+                        'vcodec': stream.video_codec,
+                        'acodec': stream.audio_codec,
+                        'format_note': f"{stream.type} - {stream.mime_type}"
                     }
-            except yt_dlp.utils.DownloadError as e:
-                logger.error(f"yt-dlp download error: {e}")
-                return {'success': False, 'error': f"Download error: {str(e)}"}
-            except yt_dlp.utils.ExtractorError as e:
-                logger.error(f"yt-dlp extractor error: {e}")
-                return {'success': False, 'error': f"Extraction error: {str(e)}"}
-            except Exception as e:
-                logger.error(f"yt-dlp unexpected error: {e}")
-                return {'success': False, 'error': f"Unexpected error: {str(e)}"}
-            finally:
-                # Schedule cleanup
-                asyncio.create_task(self._cleanup_temp_dir(temp_dir))
+                    formats.append(format_info)
                 
+                return {
+                    'success': True,
+                    'title': yt.title,
+                    'uploader': yt.author,
+                    'duration': yt.length,
+                    'thumbnail': yt.thumbnail_url,
+                    'platform': platform,
+                    'formats': formats,
+                    'filesize': yt.streams.get_highest_resolution().filesize if yt.streams.get_highest_resolution() else 0
+                }
+                
+            except PytubeError as e:
+                logger.error(f"Pytube error: {e}")
+                return {'success': False, 'error': f"Pytube error: {str(e)}"}
+            except Exception as e:
+                logger.error(f"Unexpected error during info extraction: {e}")
+                return {'success': False, 'error': f"Unexpected error: {str(e)}"}
+            
         except Exception as e:
-            logger.error(f"Info extraction error: {e}")
+            logger.error(f"Error getting download info: {e}")
             return {'success': False, 'error': str(e)}
     
     async def extract_info(self, url: str) -> Dict[str, Any]:
@@ -561,62 +480,26 @@ class DownloadService:
             # Determine platform
             platform = self._get_platform(url)
             
+            if platform != 'youtube':
+                return {'success': False, 'error': f'Platform {platform} not supported. Only YouTube is supported.'}
+            
             # Use pytube for YouTube
-            if platform == 'youtube':
-                try:
-                    yt = YouTube(url)
-                    stream = yt.streams.get_highest_resolution()
-                    
-                    return {
-                        'success': True,
-                        'title': yt.title,
-                        'uploader': yt.author,
-                        'duration': yt.length,
-                        'thumbnail': yt.thumbnail_url,
-                        'platform': platform,
-                        'filesize': stream.filesize if stream else 0
-                    }
-                except PytubeError as e:
-                    logger.error(f"Pytube info extraction error: {e}")
-                    # Fall back to yt-dlp if pytube fails
-            
-            # For other platforms or as fallback, use yt-dlp
-            ydl_opts = {
-                'quiet': True,
-                'no_warnings': True,
-                'skip_download': True,
-                'youtube_include_dash_manifest': False,
-                'nocheckcertificate': True,
-                'ignoreerrors': True,
-                'user_agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1',
-                'proxy': None,  # Disable proxy
-                'socket_timeout': 60,  # Increased timeout for better reliability with DNS issues
-                'source_address': '0.0.0.0',  # Use any available network interface
-                'force_ipv4': True,  # Force IPv4 to avoid IPv6 issues
-                'geo_bypass': True,  # Bypass geo-restrictions
-                'geo_bypass_country': 'US',
-                'cookiefile': None,  # No cookies
-                'extractor_args': {'youtube': {'player_client': ['android']}},
-                'timeout': 60  # Increased timeout for info extraction to handle DNS issues
-            }
-            
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                info = await asyncio.get_event_loop().run_in_executor(
-                    None, lambda: ydl.extract_info(url, download=False)
-                )
-                
-                if not info:
-                    return {'success': False, 'error': 'Could not extract info'}
+            try:
+                yt = YouTube(url)
+                stream = yt.streams.get_highest_resolution()
                 
                 return {
                     'success': True,
-                    'title': info.get('title', 'Unknown'),
-                    'uploader': info.get('uploader', 'Unknown'),
-                    'duration': info.get('duration', 0),
-                    'thumbnail': info.get('thumbnail', ''),
+                    'title': yt.title,
+                    'uploader': yt.author,
+                    'duration': yt.length,
+                    'thumbnail': yt.thumbnail_url,
                     'platform': platform,
-                    'filesize': info.get('filesize') or info.get('filesize_approx') or 0
+                    'filesize': stream.filesize if stream else 0
                 }
+            except PytubeError as e:
+                logger.error(f"Pytube info extraction error: {e}")
+                return {'success': False, 'error': f'Pytube error: {str(e)}'}
                 
         except Exception as e:
             logger.error(f"Info extraction error: {e}")

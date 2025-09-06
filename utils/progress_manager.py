@@ -140,7 +140,7 @@ class ProgressManager:
             return f"{hours}:{minutes:02d} ساعت"
 
 class TelethonProgressHook:
-    """Hook برای نمایش پیشرفت دانلود yt-dlp با Telethon"""
+    """Hook برای نمایش پیشرفت دانلود pytube با Telethon"""
     
     def __init__(self, progress_manager: ProgressManager):
         self.progress_manager = progress_manager

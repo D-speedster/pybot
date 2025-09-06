@@ -153,7 +153,7 @@ class BotLogger:
         telethon_logger = logging.getLogger('telethon')
         telethon_logger.setLevel(logging.WARNING)
         
-        # yt-dlp
+        # pytube
         ytdlp_logger = logging.getLogger('yt_dlp')
         ytdlp_logger.setLevel(logging.WARNING)
         
