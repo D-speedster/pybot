@@ -147,8 +147,8 @@ class PytubeDownloader:
             # Create progress callback
             progress_handler = PytubeProgressCallback(progress_callback)
             
-            # Initialize YouTube object
-            yt = YouTube(url, on_progress_callback=progress_handler, client='ANDROID')
+            # Initialize YouTube object with cookies and po_token
+            yt = YouTube(url, on_progress_callback=progress_handler, use_po_token=True, cookies='cookies.txt')
             
             # Get stream based on quality
             stream = self._get_stream_by_quality(yt, quality)
@@ -431,8 +431,8 @@ class DownloadService:
             logger.info(f"Using pytube to extract info for URL: {url}")
             
             try:
-                # Initialize YouTube object
-                yt = YouTube(url, client='ANDROID')
+                # Initialize YouTube object with cookies and po_token
+                yt = YouTube(url, use_po_token=True, cookies='cookies.txt')
                 
                 # Get available streams
                 streams = yt.streams.all()
@@ -485,7 +485,7 @@ class DownloadService:
             
             # Use pytube for YouTube
             try:
-                yt = YouTube(url, client='ANDROID')
+                yt = YouTube(url, use_po_token=True, cookies='cookies.txt')
                 stream = yt.streams.get_highest_resolution()
                 
                 return {
